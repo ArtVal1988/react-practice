@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "jslint": "^0.12.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
@@ -14,8 +15,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js",
-  "lint:fix": "eslint src/**/*.js --fix",
-  "lint:format": "prettier src/**/*.{js,css,json} --write"
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint:format": "prettier src/**/*.{js,css,json} --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +46,6 @@
     "lint-staged": "^9.4.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2"
-  }
+  },
+  "homepage": "https://artval1988.github.io/react-practice/"
 }
